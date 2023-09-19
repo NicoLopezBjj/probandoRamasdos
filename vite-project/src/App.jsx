@@ -15,7 +15,9 @@ let URLBASE=`https://rickandmortyapi.com/api/character`
 useEffect(()=>{
 
   const getPersonajes= async()=>{
-
+let nuevaFuncion=()=>{
+let data=new Date()
+}
        let response= await axios.get(`${URLBASE}/?${page}`)
       //  console.log(response.data.results)
        setPersonajes(response.data.results)
